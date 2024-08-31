@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#box {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: royalblue;
+    animation-name: width_inc;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: rgb(225, 196, 65);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes width_inc {
+    from {
+        width: 200px;
+    }
+    
+    to {
+        width: 800px;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: rgb(225, 196, 65);
+    }
+    
+    25% {
+        top: 0%;
+        left: 100%;
+        transform: translate(-100%, 0);
+        background-color: rgb(65, 225, 65);
+    }
+    
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+        background-color: rgb(65, 166, 225);
+    }
+    
+    75% {
+        top: 100%;
+        left: 0%;
+        transform: translate(0%, -100%);
+        background-color: rgb(100, 65, 225);
+    }
+    
+    100% {
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        background-color: rgb(225, 196, 65);
+    }
+}

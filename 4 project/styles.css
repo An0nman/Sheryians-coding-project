@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: gray; */
+}
+
+#left {
+    width: 80%;
+    height: 100%;
+    background-color: red;
+}
+
+#left #ltop {
+    width: 100%;
+    height: 70%;
+    background-image: url(https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#ltbutton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 60px;
+    background-color: #ffffffa2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#ltbutton i{
+    font-size: 16px;
+}
+
+#left #lbottom {
+    width: 100%;
+    height: 30%;
+    background-color: #222;
+    color: #fff;
+    padding: 100px 150px;
+}
+
+#lbtmcontent {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+#lbcontentleft {
+    width: 45%;
+    height: 100%;
+    font-family: "Arial";
+    /* background-color: yellow; */
+}
+
+#lbcontentleft p {
+    width: 70%;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+#lbcontentright {
+    width: 45%;
+    height: 100%;
+    font-family: "Arial";
+    /* background-color: goldenrod; */
+}
+
+.lbcrrow {
+    margin-top: 20px;
+    display: flex;
+    padding-right: 130px;
+    justify-content: space-between;
+    /* width: 300px; */
+    /* background-color: rgba(255, 0, 0, 0.295); */
+}
+
+.relem {
+    display: flex;
+    width: 150px;
+}
+
+.rElText {
+    margin-left: 10px;
+}
+
+.rElText h6 {
+    opacity: .5;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#right {
+    width: 20%;
+    height: 100%;
+    background-color: green;
+    font-family: "Arial";
+}
+
+#right #rtop {
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 75px;
+    position: relative;
+}
+
+#rtop a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+/* for minus before pricing link */
+/* #rtop a:nth-child(2)::before{
+    content: '-';
+} */
+/* second way to put minus */
+#rtop #selected {
+    margin-left: 20px;
+    position: relative;
+}
+
+#rtop #selected::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#icon i {
+    font-size: 20px;
+}
+
+#right #rbottom {
+    width: 100%;
+    height: 30%;
+    background-image: url(https://images.unsplash.com/photo-1531875456634-3f5418280d20?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#capsule{
+    width: 90%;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 10px;
+}
+#capsule h2{
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+#capsule p{
+    font-size: 12px;
+    width: 90%;
+    font-weight: 500;
+    opacity: .5;
+}
+
+#btmflower{
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(https://images.unsplash.com/photo-1592296429945-93008c7e5a59?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: bottom;
+    background-size: cover;
+}
+#btmflower i{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #0000005d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

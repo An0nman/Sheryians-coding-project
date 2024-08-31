@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1530133532239-eda6f53fcf0f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#right {
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1622774011978-a459f90c574d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+}
+
+#overlay1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.539);
+    position: relative;
+}
+
+#overlay2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.539);
+    position: relative;
+}
+
+#text1,#text2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#text1 h1,#text2 h1 {
+    font-size: 40px;
+}
+
+#text2{
+    color: #000;
+}

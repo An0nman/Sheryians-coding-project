@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+#nav {
+    /* background-color: aqua; */
+    width: 100%;
+    /* height: 80px; */
+    padding: 1% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://e7.pngegg.com/pngimages/893/122/png-clipart-travel-agent-trip-planner-logo-travel-text-backpack-thumbnail.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+#nav-links a:nth-child(1) {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#nav i {
+    color: #fff;
+    font-size: 25px;
+    display: none;
+}
+
+#left {
+    width: 30%;
+    height: 100%;
+    background-color: #00000056;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 50px;
+    position: relative;
+}
+
+#left .place {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    opacity: .7;
+    padding-left: 13.333%;
+}
+
+#left .place:nth-child(3) {
+    opacity: 1;
+    /* background-color: #00000049; */
+}
+
+.place h4 {
+    font-size: 30px;
+}
+
+.place h6 {
+    font-weight: 600;
+    opacity: .5;
+    font-size: 15px;
+}
+
+.place .place-text h4 {
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+
+
+#left .place:nth-child(3) h4 {
+    font-size: 60px;
+    white-space: nowrap;
+}
+
+#left .place:nth-child(3) h6 {
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+#left #scroll {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    transform: translate(-40%, 0%);
+}
+
+#scroll p {
+    white-space: nowrap;
+}
+
+#scroll #line {
+    transform-origin: 0% 0%;
+    transform: rotate(90deg);
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#right {
+    width: 70%;
+    height: 100%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#r-text {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0%, -50%);
+    text-align: right;
+}
+
+#r-text h1 {
+    font-size: 200px;
+    line-height: 1;
+}
+
+#r-text h2 {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+#rt-input {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 15px;
+    border-bottom: 2px solid #fff;
+
+}
+
+#rt-input i {
+    font-size: 25px;
+}
+
+#rt-input input {
+    width: 100%;
+    padding: 12px 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+#rt-input input::placeholder {
+    color: #fff;
+    font-weight: 100;
+}
+
+#right small {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    color: #fff;
+}
+
+@media(max-width:500px) {
+    #main{
+        background-position: center;
+        background-size: cover;
+        display: block;
+    }
+    #mian #nav {
+        padding: 0 20px;
+    }
+
+    #nav #nav-links {
+        display: none;
+    }
+
+    #nav i {
+        display: initial;
+    }
+    #left{
+        width: 100%;
+        height: 50%;
+        gap: 20px;
+    }
+    #left .place h4{
+        font-size: 16px;
+    }
+    #left .place h6{
+        font-size: 12px;
+    }
+    #left .place:nth-child(3) h4{
+        font-size: 30px;
+    }
+    #left .place:nth-child(3) h6{
+        font-size: 15px;
+    }
+    #left #scroll{
+        display: none;
+    }
+    #right{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        bottom: -10%;
+    }
+    #r-text{
+        /* right: 0; */
+        position: absolute;
+        top: 0;
+        transform: translate(0%,0%);
+        width: 80%;
+    }
+    #r-text h2{
+        font-size: 30px;
+    }
+    #r-text h1{
+        font-size: 150px;
+    }#r-text input{
+        font-size: 15px;
+    }
+    #right small{
+        display: none;
+    }
+}
