@@ -1,8 +1,264 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+
 }
-body{
+
+body {
     height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#left #overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: 98; */
+    /* rotate: 180deg; */
+    background-color: #bbff00;
+}
+#nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    opacity: 0;
+}
+
+#nav i {
+    font-size: 20px;
+}
+
+#left img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+#left>h1 {
+    font-size: 120px;
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
+    text-align: right;
+    color: #bbff00;
+    z-index: 100;
+    line-height: 1;
+    opacity: 0;
+}
+
+#right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #032856;
+}
+
+#right #rimg1,
+#right #rimg2,
+#right #rimg3 {
+    height: 35%;
+    width: 35%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#right #rimg1 {
+    left: 65%;
+    transform: translate(-50%, 0%);
+}
+
+#right #rimg2 {
+    top: 50%;
+    left: 3%;
+    transform: translate(0, -50%);
+}
+
+#right #rimg3 {
+    bottom: 0%;
+    right: 3%;
+}
+
+#right>h1 {
+    color: #bbff00;
+    font-size: 100px;
+    font-weight: 100;
+    position: absolute;
+    rotate: -90deg;
+    right: -29%;
+    top: -3%;
+    transform: translate(-50%, 0%);
+    line-height: 1;
+    opacity: 0;
+}
+
+#right>button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+#right>button>span {
+    font-size: 12px;
+    opacity: .8;
+}
+
+/* animated elements */
+#left>h1,
+#rimg3 {
+    animation-name: move-l-to-r1;
+    animation-duration: 2s;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+}
+
+#rimg1 {
+    animation-name: move-l-to-r2;
+    animation-duration: 2s;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+}
+
+#rimg2 {
+    animation-name: move-l-to-r3;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-l-to-r1 {
+    0% {
+        right: -50%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 3%;
+        opacity: 1;
+    }
+}
+
+@keyframes move-l-to-r2 {
+    0% {
+        left: 115%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 65%;
+        opacity: 1;
+    }
+}
+
+@keyframes move-l-to-r3 {
+    0% {
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 50%;
+        left: 3%;
+        opacity: 1;
+    }
+}
+
+#right>h1 {
+    animation-name: move-l-to-r4;
+    animation-duration: 2s;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-l-to-r4 {
+    0% {
+        right: -79%;
+        opacity: 0;
+    }
+
+    100% {
+        right: -29%;
+        opacity: 1;
+    }
+}
+#left #overlay{
+    animation-name: left-overlay-anim;
+    animation-duration: 2s;
+}
+@keyframes left-overlay-anim {
+    0%{
+        left: 50%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
+#left img{
+    animation-name: left-img-anim;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes left-img-anim {
+    0%{
+        transform: rotate(45deg) scale(1.5);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    
+}
+#left #nav,#right>button{
+    animation-name: opacity-inc-anim;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes opacity-inc-anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
