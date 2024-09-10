@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+body{
+    height: 100vh;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+#nav-links{
+    display: flex;
+    gap: 40px;
+}
+#nav-links a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+#nav-buttons button{
+    padding: .6vw 1.5vw;
+}
+#nav-buttons i{
+    display: none;
+}
+#home{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: end;
+}
+#left{
+    width: 35%;
+    min-height: inherit;
+    position: relative;
+    padding: 5vw;
+}
+#text{
+    width: 80%;
+    position: absolute;
+    right: -20%;
+}
+#text h1{
+    font-size: 3.2vw;
+    line-height: 1;
+}
+#text p{
+    margin: 1.5vw 0;
+}
+#text button{
+    padding: .7vw 2vw;
+    background-color: #000;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+}
+#center{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1527676344327-6039c845e363?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    width: 25%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vw;
+}
+#r-circle{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+}
+
+#r-details .rd-col{
+    margin-top: 20px;
+}
+#r-details .rd-col h6{
+    font-weight: 400;
+    opacity: .6;
+    margin-top: 4px;
+}
+#r-icons{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4vw;
+}
+@media (max-width:500px) {
+    #nav{
+        height: 7vh;
+    }
+    #nav-links{
+        display: none;
+    }
+    #nav-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    #nav-buttons i{
+        display: contents;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #left #text{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #text h1{
+        font-size: 6vw;
+    }
+    #text button{
+        padding: 1vw 3vw;
+    }
+    #center{
+        width: 100%;
+        min-height: 50vh;
+    }
+    #right{
+        width: 100%;
+        min-height: 12vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1vw;
+    }
+    #right #r-details{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    #r-details .rd-col{
+        margin: 0;
+    }
+    #right #r-icons{
+        display: flex;
+        gap: 10px;
+    }
+}
