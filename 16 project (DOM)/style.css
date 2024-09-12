@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(rgb(138, 157, 214),rgb(45, 89, 221));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#card{
+    height: 500px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px;
+}
+#card img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position:left top;
+}
+#card p{
+    font-size: 14px;
+}
+#card h5{
+    font-size: 25px;
+}
+#card #Strangers{
+    color: red;
+}
+#card #Friends{
+    color: green;
+}
+#card button{
+    padding: 8px 20px;
+    background-color: rgb(45, 89, 221);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+}
+#card button.blue{
+    background-color: royalblue;
+}
+#card button.red{
+    background-color: red;
+}
