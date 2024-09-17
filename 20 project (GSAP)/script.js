@@ -19,6 +19,7 @@ menu_btn.addEventListener("click", function () {
   }
 });
 
+//page 1,2 animation
 var tl=gsap.timeline();
 
 tl.from("#page1 h1",{
@@ -49,15 +50,28 @@ gsap.to("#page2 img",{
     scrub:3
   }
 })
-gsap.from("#page2 h1",{
-  rotateX:"-90deg",
-  opacity:0,
+gsap.to("#page2 h1",{
+  rotateX:0,
   scrollTrigger:{
     trigger:"#page2 h1",
     scroller:"body",
-    markers:true,
-    start:"top 70%",
-    end:"top 60%",
-    scrub:1,
+    // markers:true,
+    start:"top 58%",
+    end:"top 50%",
+    scrub:2,
   }
+})
+
+//one sliding animation
+var slide1h1= document.querySelectorAll("#page6 .p6-slide1-h1 h1");
+slide1h1.forEach(function(elem){
+  gsap.to(elem,{
+    transform:"translatex(-100%)",
+    duration:4,
+    scrollTrigger:{
+      trigger:"#page6",
+      scroll:"body",
+      scrub:1,
+    }
+  })
 })

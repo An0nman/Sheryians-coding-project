@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=SUSE:wght@100..800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "SUSE", system-ui;
     color: #dadada;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
-body{
+
+body {
     background-color: #222;
     overflow-x: hidden;
 }
-#main{
+
+#main {
     position: relative;
     background-color: #222;
 }
-#full-scr-nav{
+
+#full-scr-nav {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -28,11 +34,13 @@ body{
     transition: all ease 1s;
     z-index: 98;
 }
-#full-scr-nav h1{
+
+#full-scr-nav h1 {
     color: #222;
     font-size: 300px;
 }
-#nav{
+
+#nav {
     position: absolute;
     z-index: 99;
     height: 100px;
@@ -42,25 +50,31 @@ body{
     justify-content: space-between;
     padding: 0 50px;
 }
-#nav h2,#nav h3{
+
+#nav h2,
+#nav h3 {
     text-transform: uppercase;
     font-size: 26px;
     letter-spacing: 3px;
 }
-#nav #nav-part2{
+
+#nav #nav-part2 {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-#nav-part2>i{
+
+#nav-part2>i {
     font-size: 25px;
 }
-#page1{
+
+#page1 {
     min-height: 80vh;
     width: 100vw;
     position: relative;
 }
-#page1 h1{
+
+#page1 h1 {
     font-size: 13vw;
     position: absolute;
     left: 6%;
@@ -68,7 +82,8 @@ body{
     letter-spacing: 10px;
     text-transform: uppercase;
 }
-#page1 h2{
+
+#page1 h2 {
     font-size: 3vw;
     position: absolute;
     left: 18%;
@@ -76,7 +91,8 @@ body{
     width: 23%;
     line-height: 2.6vw;
 }
-#page1 h3{
+
+#page1 h3 {
     font-size: 1vw;
     position: absolute;
     left: 70%;
@@ -87,30 +103,157 @@ body{
     font-weight: 200;
     letter-spacing: 1px;
 }
-#page2{
+
+#page2 {
     position: relative;
     min-height: 100vh;
     padding-bottom: 20vh;
 }
-#page2 img{
+
+#page2 img {
     width: 100%;
     position: relative;
     top: 80%;
     left: 50%;
-    transform: translate(-50%,0) scale(0.9);
+    transform: translate(-50%, 0) scale(0.9);
 }
-#page2 h1{
+
+#page2 h1 {
     font-size: 55px;
     width: 45%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    transform-origin: 100% 100%;
+    transform: rotateX(270deg);
 }
-#page2 #text1{
+
+#page2 #text1 {
     margin-top: 10vh;
 }
-#page2 h1 span{
+
+#page2 h1 span {
     font-family: "Playwrite CU", cursive;
     font-weight: 400;
     font-size: 40px;
+}
+
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+}
+
+#page4 {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    padding: 60px 140px;
+    display: flex;
+    align-items: center;
+}
+
+#page4 h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: 18vh;
+}
+
+#page5 {
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page5 #p5-elem {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#p5-elem h1 {
+    width: 73%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 90px;
+    padding: 0 80px;
+    border: 1px solid #dadada;
+}
+
+#p5-elem h2 {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    padding: 0px 60px;
+    font-weight: 400;
+    border-top: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+#page5 #p5-2elem {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 200px 0;
+    background-image: url(https://uploads-ssl.webflow.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif);
+}
+
+#p5-2elem h1 {
+    font-size: 3.6vw;
+    width: 50vw;
+    text-align: center;
+    line-height: 3vw;
+}
+
+#p5-2elem h1 span {
+    font-family: "Playwrite CU", cursive;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+#p5-2elem h4 {
+    font-size: 1vw;
+    width: 30%;
+    margin: 50px;
+}
+#page6{
+    font-family:'Courier New', Courier, monospace;
+}
+#page6 h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: 16vh;
+}
+#page6 .p6-slide1-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+#page6 .p6-slide2-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+#page6 .p6-slide1-h1::-webkit-scrollbar{
+    display: none;
+}
+#page6 .p6-slide2-h1::-webkit-scrollbar{
+    display: none;
+}
+#page6 .p6-slide2-h1 h1{
+    transform: translateX(-100%);
+}
+#page6 h1 .one1{
+    opacity: .1;
+    /* -webkit-text-stroke: 1px #dadada; */
 }
