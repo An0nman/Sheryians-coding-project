@@ -26,6 +26,7 @@ body{
     background-color: #dadada;
     padding: 50px 100px;
     transition: all ease 1s;
+    z-index: 98;
 }
 #full-scr-nav h1{
     color: #222;
