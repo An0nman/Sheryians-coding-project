@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=SUSE:wght@100..800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +10,11 @@ html,body{
     height: 100%;
     width: 100%;
 }
+body{
+    background-color: #222;
+    overflow-x: hidden;
+}
 #main{
-    height: 100%;
     position: relative;
     background-color: #222;
 }
@@ -50,4 +53,63 @@ html,body{
 }
 #nav-part2>i{
     font-size: 25px;
+}
+#page1{
+    min-height: 80vh;
+    width: 100vw;
+    position: relative;
+}
+#page1 h1{
+    font-size: 13vw;
+    position: absolute;
+    left: 6%;
+    top: 22%;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+#page1 h2{
+    font-size: 3vw;
+    position: absolute;
+    left: 18%;
+    top: 55%;
+    width: 23%;
+    line-height: 2.6vw;
+}
+#page1 h3{
+    font-size: 1vw;
+    position: absolute;
+    left: 70%;
+    top: 55%;
+    width: 10%;
+    line-height: .9vw;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+#page2{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 20vh;
+}
+#page2 img{
+    width: 100%;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,0) scale(0.9);
+}
+#page2 h1{
+    font-size: 55px;
+    width: 45%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#page2 #text1{
+    margin-top: 10vh;
+}
+#page2 h1 span{
+    font-family: "Playwrite CU", cursive;
+    font-weight: 400;
+    font-size: 40px;
 }
