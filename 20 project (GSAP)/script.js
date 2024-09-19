@@ -71,7 +71,38 @@ slide1h1.forEach(function(elem){
     scrollTrigger:{
       trigger:"#page6",
       scroll:"body",
-      scrub:1,
+      scrub:3,
     }
   })
+})
+var slide2h1= document.querySelectorAll("#page6 .p6-slide2-h1 h1");
+slide2h1.forEach(function(elem){
+  gsap.to(elem,{
+    transform:"translatex(0%)",
+    duration:4,
+    scrollTrigger:{
+      trigger:"#page6",
+      scroll:"body",
+      scrub:3,
+    }
+  })
+})
+
+//question part 
+document.querySelector("#p7e1").addEventListener("mousemove",function(details){
+  document.querySelector("#p7e1 img").style.opacity=1;
+  document.querySelector("#p7e1 img").style.left=`${details.x-200}px`;
+  document.querySelector("#p7e1 img").style.top=`${details.y-530}px`;
+})
+document.querySelector("#p7e1").addEventListener("mouseleave",function(details){
+  document.querySelector("#p7e1 img").style.opacity=0;
+})
+//question part 
+document.querySelector("#p7e2").addEventListener("mousemove",function(details){
+  document.querySelector("#p7e2 img").style.opacity=1;
+  document.querySelector("#p7e2 img").style.left=`${details.x-200}px`;
+  document.querySelector("#p7e2 img").style.top=`${details.y-530}px`;
+})
+document.querySelector("#p7e2").addEventListener("mouseleave",function(details){
+  document.querySelector("#p7e2 img").style.opacity=0;
 })

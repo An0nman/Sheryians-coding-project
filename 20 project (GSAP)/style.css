@@ -87,7 +87,7 @@ body {
     font-size: 3vw;
     position: absolute;
     left: 18%;
-    top: 55%;
+    top: 46vh;
     width: 23%;
     line-height: 2.6vw;
 }
@@ -119,7 +119,7 @@ body {
 }
 
 #page2 h1 {
-    font-size: 55px;
+    font-size: 2.7vw;
     width: 45%;
     text-align: center;
     margin-left: auto;
@@ -135,7 +135,7 @@ body {
 #page2 h1 span {
     font-family: "Playwrite CU", cursive;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.4vw;
 }
 
 #page3 {
@@ -178,7 +178,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 90px;
+    font-size: 3.5vw;
     padding: 0 80px;
     border: 1px solid #dadada;
 }
@@ -188,7 +188,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 35px;
+    font-size: 1.6vw;
     padding: 0px 60px;
     font-weight: 400;
     border-top: 1px solid #dadada;
@@ -226,34 +226,103 @@ body {
     width: 30%;
     margin: 50px;
 }
-#page6{
-    font-family:'Courier New', Courier, monospace;
+
+#page6 {
+    font-family: 'Courier New', Courier, monospace;
 }
-#page6 h1{
+
+#page6 h1 {
     font-size: 10vw;
     text-transform: uppercase;
     line-height: 16vh;
 }
-#page6 .p6-slide1-h1{
+
+#page6 .p6-slide1-h1 {
     overflow-x: auto;
     overflow-y: hidden;
     cursor: default;
 }
-#page6 .p6-slide2-h1{
+
+#page6 .p6-slide2-h1 {
     overflow-x: auto;
     overflow-y: hidden;
     cursor: default;
 }
-#page6 .p6-slide1-h1::-webkit-scrollbar{
+
+#page6 .p6-slide1-h1::-webkit-scrollbar {
     display: none;
 }
-#page6 .p6-slide2-h1::-webkit-scrollbar{
+
+#page6 .p6-slide2-h1::-webkit-scrollbar {
     display: none;
 }
-#page6 .p6-slide2-h1 h1{
+
+#page6 .p6-slide2-h1 h1 {
     transform: translateX(-100%);
 }
-#page6 h1 .one1{
+
+#page6 h1 .one1 {
     opacity: .1;
     /* -webkit-text-stroke: 1px #dadada; */
+}
+
+#page7 {
+    height: 100vh;
+    width: 100%;
+    padding: 180px 50px;
+}
+
+#page7 h3 {
+    font-size: 2.9vw;
+    width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#page7 h3 span {
+    font-family: "Playwrite CU", cursive;
+    font-size: 2.3vw;
+    font-weight: 300;
+}
+
+#page7 #p7-elem {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5vh;
+}
+
+#p7-elem #p7e1 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#p7-elem #p7e2 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p7-elem h1 {
+    font-size: 2vw;
+    position: relative;
+    z-index: 99;
+}
+
+#p7e1 img,
+#p7e2 img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in 0.2s;
+    transform: rotate(10deg);
 }
