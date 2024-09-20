@@ -92,7 +92,7 @@ slide2h1.forEach(function(elem){
 document.querySelector("#p7e1").addEventListener("mousemove",function(details){
   document.querySelector("#p7e1 img").style.opacity=1;
   document.querySelector("#p7e1 img").style.left=`${details.x-200}px`;
-  document.querySelector("#p7e1 img").style.top=`${details.y-530}px`;
+  document.querySelector("#p7e1 img").style.top=`${details.y-300}px`;
 })
 document.querySelector("#p7e1").addEventListener("mouseleave",function(details){
   document.querySelector("#p7e1 img").style.opacity=0;
@@ -101,7 +101,7 @@ document.querySelector("#p7e1").addEventListener("mouseleave",function(details){
 document.querySelector("#p7e2").addEventListener("mousemove",function(details){
   document.querySelector("#p7e2 img").style.opacity=1;
   document.querySelector("#p7e2 img").style.left=`${details.x-200}px`;
-  document.querySelector("#p7e2 img").style.top=`${details.y-530}px`;
+  document.querySelector("#p7e2 img").style.top=`${details.y-300}px`;
 })
 document.querySelector("#p7e2").addEventListener("mouseleave",function(details){
   document.querySelector("#p7e2 img").style.opacity=0;
